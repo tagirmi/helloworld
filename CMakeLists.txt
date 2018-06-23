@@ -26,7 +26,7 @@ set(TEST_NAME test_lib)
 include_directories(${GTEST_INCLUDE_DIR})
 add_executable(${TEST_NAME}_cli test_lib.cpp)
 target_link_libraries(${TEST_NAME}_cli ${GTEST_LIBRARY} ${GTEST_MAIN_LIBRARY})
-target_link_libraries(${TEST_NAME}_cli ${PROJECT_NAME}_lib)
+target_link_libraries(${TEST_NAME}_cli ${PROJECT_NAME}_lib pthread)
 
 enable_testing()
 add_test(${TEST_NAME} ${TEST_NAME}_cli)
