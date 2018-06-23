@@ -22,7 +22,6 @@ install(TARGETS ${PROJECT_NAME}_cli RUNTIME DESTINATION bin)
 
 # unit tests
 set(TEST_NAME test_lib)
-set (gtest_disable_pthreads on)
 include_directories(${GTEST_INCLUDE_DIR})
 add_executable(${TEST_NAME}_cli test_lib.cpp)
 target_link_libraries(${TEST_NAME}_cli ${GTEST_LIBRARY} ${GTEST_MAIN_LIBRARY})
