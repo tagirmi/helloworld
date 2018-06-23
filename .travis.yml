@@ -3,13 +3,13 @@ language: cpp
 install:
   - sudo apt-get install libgtest-dev
 
-script:
+before_script:
   - cd /usr/src/gtest
-  - sudo cmake CMakeLists.txt
+  - sudo cmake .
   - sudo make
   - sudo cp *.a /usr/lib
 
-  - cd tagirmi/helloworld
+script:
   - cmake .
   - cmake --build .
   - cmake --build . --target test
