@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.2)
 project(helloworld VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 find_package(GTest REQUIRED)
+find_package(Threads REQUIRED)
 
 configure_file(version.h.in version.h)
 
