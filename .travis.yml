@@ -12,4 +12,4 @@ script:
   - cmake .
   - cmake --build .
   - cmake --build . --target test
-  - ctest
+  - cmake --build . --target package
