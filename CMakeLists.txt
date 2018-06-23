@@ -15,3 +15,5 @@ set_target_properties(${PROJECT_NAME}_cli ${PROJECT_NAME}_lib PROPERTIES
 )
 
 target_link_libraries(${PROJECT_NAME}_cli ${PROJECT_NAME}_lib)
+
+install(TARGETS ${PROJECT_NAME}_cli RUNTIME DESTINATION bin)
