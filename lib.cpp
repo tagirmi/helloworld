@@ -1,6 +1,5 @@
 #include "lib.h"
-
-#define PROJECT_VERSION_PATCH 1
+#include "version.h"
 
 int mylib::version()
 {
