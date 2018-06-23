@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.2)
 
 project(helloworld)
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME}_cli main.cpp)
 
-#add_library(helloworld lib.cpp)
+add_library(${PROJECT_NAME} lib.cpp)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
   CXX_STANDARD 14
