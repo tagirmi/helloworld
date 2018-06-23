@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
+#include "lib.h"
 
-TEST(lib_test, test) {
-  ASSERT_TRUE(true);
+TEST(lib_test, test)
+{
+    EXPECT_GT(mylib::version(), 0);
 }
